@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <form id="form">
+    <div class="hed">
+        <div class="log">
+    <span><i class="fa-solid fa-graduation-cap"></i></span>
+    <a>Student Management Dashboard</a>
+    </div>
+    <div class="theme">
+        <span><i class="fa-solid fa-palette"></i></span>
+        <a>Change Theme</a>
+    </div>
+    </div>
+    <div class="card">
+
+    <div class="std">
+        <span class="ic"><i class="fa-solid fa-users"></i></span>
+       <div class="size">
+        <span>3</span>
+        <a>Total Students</a>
+        </div>
+        </div>
+
+
+        <div class="card2">
+        <span class="cd"><i class="fa-solid fa-circle-check"></i></span>
+       <div class="sz">
+        <span>2</span>
+        
+        <a>Passed Students</a>
+        </div>
+        </div>
+
+
+         <div class="card3">
+        <span class="cd3"><i class="fa-regular fa-circle-xmark"></i></span>
+       <div class="sz3">
+        <span>1</span>
+        
+        <a>Failed Students</a>
+        </div>
+        </div>
+
+
+
+        <div class="card4">
+        <span class="cd4"><i class="fa-solid fa-trophy"></i></span>
+       <div class="sz4">
+        <span>95</span>
+        
+        <a>Failed Students</a>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class="main">
+        <div class="bord">
+            <span><i class="fa-solid fa-circle-plus"></i></span>
+            <a>Add Students:</a>
+        </div>
+        <div class="dtl">
+        <div class="name">
+            <a>Student Name</a><br>
+            <input type="text" placeholder="Enter Student Name" id="name">
+        </div>
+        <div class="roll">
+        <a>Roll Number</a><br>
+            <input type="number" placeholder="Enter Roll Number" id="roll">
+            </div>
+            <div class="mark1">
+            <a>Subject 1 Mark</a><br>
+            <input type="number" placeholder="marks" id="mark1">
+            </div>
+            <div class="mark2">
+            <a>Subject 2 Mark</a><br>
+            <input type="number" placeholder="marks" id="mark2">
+            </div>
+            <div class="mark3">
+            <a>Subject 3 Mark</a><br>
+            <input type="number" placeholder="marks" id="mark3">
+            </div>
+            <div class="stbt">
+                <button id="submit" type="submit"><i class="fa-solid fa-user-plus"></i>     Add Student</button>
+            </div>
+            </div>
+        </div>
+<div class="headg">
+        <div class="all">
+        <div class="details">
+            <div class="icon">
+            <span><i class="fa-solid fa-book"></i></span>
+            <a> Students Dashboard</a>
+            </div>
+            <button><i class="fa-solid fa-clipboard"></i>      Generate Report</button>
+        </div>  
+            <div>
+        <table id="report">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Subject 1</th>
+                        <th>Subject 2</th>
+                        <th>Subject 3</th>
+                        <th>Total</th>
+                        <th>Average</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rahul</td>
+                        <td>101</td>
+                        <td>95</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>270</td>
+                        <td>90.00</td>
+                        <td><span class="passed">A Grade</span></td>
+                        <td><span class="passed">Passed</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Priya</td>
+                        <td>102</td>
+                        <td>80</td>
+                        <td>75</td>
+                        <td>70</td>
+                        <td>225</td>
+                        <td>75.00</td>
+                        <td><span class="passed">B Grade</span></td>
+                        <td><span class="passed">Passed</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Aman</td>
+                        <td>103</td>
+                        <td>40</td>
+                        <td>45</td>
+                        <td>50</td>
+                        <td>135</td>
+                        <td>45.00</td>
+                        <td><span class="failed">D Grade</span></td>
+                        <td><span class="failed">Failed</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+
+                   
+                </tbody>
+            </table>
+       </div>
+        
+        </div>
+        <div class="report">
+            <div class="hd">
+            <span><i class="fa-solid fa-chart-simple"></i></span>
+            <a>Students Report</a>
+            </div>
+            <div class="rh">
+                <span>Rahul</span>
+                <span>90.00</span>
+            </div>
+             <div class="ph">
+                <span>Priya</span>
+                <span>75.00</span>
+            </div>
+             <div class="ah">
+                <span>Aman</span>
+                <span>45.00</span>
+            </div>
+            
+        </div>
+        
+    
+
+    </div>
+
+</form>
+    <script src="./script.js"></script>
+</body>
+</html>
